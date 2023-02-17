@@ -50,8 +50,6 @@ In order to remove noise from an image, we could use spatial filters like Gaussi
 
 Another approach is to use thresholding or adaptive thresholding to isolate regions of the image that are most likely to contain the features of interest, while suppressing noise in other regions.
 
----
-
 ## **Justification**:
 
 - I chose Gaussian filter because it has a smoothing effect while preserving the edges of the image, while computationally efficient
@@ -68,8 +66,6 @@ Another approach is to use thresholding or adaptive thresholding to isolate regi
 
 - In the code, I used color analysis to identify the specific regions within the ROI that correspond to the eyebrows and extract pixels with specific color values or by analyzing color histograms within the ROI.
 
----
-
 ### Justification of extracting eyebrows:
 
 Position of the eyebrows relative to the eyes can provide information about the direction of the gaze. When a person looks up or down, their eyebrows move accordingly, and these changes can be detected by tracking the position of the eyebrows.
@@ -85,7 +81,7 @@ Reason to extract eye corners is to measure the position and movement of the eye
 
 ---
 
-### Extracting pupil size
+## Extracting pupil size
 
 Reason to extract the size of the pupil is that it does changes in response to changes in lighting and focus. We can use contour detection or Hough circle detection to detect and extract pupil
 
