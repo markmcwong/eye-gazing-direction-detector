@@ -52,7 +52,7 @@ Another approach is to use thresholding or adaptive thresholding to isolate regi
 
 ---
 
-##**Justification**:
+## **Justification**:
 
 - I chose Gaussian filter because it has a smoothing effect while preserving the edges of the image, while computationally efficient
 
@@ -74,7 +74,7 @@ Another approach is to use thresholding or adaptive thresholding to isolate regi
 
 Position of the eyebrows relative to the eyes can provide information about the direction of the gaze. When a person looks up or down, their eyebrows move accordingly, and these changes can be detected by tracking the position of the eyebrows.
 
-###Improvements I could make:
+### Improvements I could make:
 Extracted eyebrow regions can be further processed using techniques such as edge detection or morphological operations to improve their shape and position accuracy.
 
 ---
