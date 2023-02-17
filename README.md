@@ -1,6 +1,6 @@
 # Idea:
 
-## Using an XGBoost Model
+## Using a XGBoost Model on facial features to detect eye-gazing directions
 
 1.  Start by collecting a dataset of labeled images, where the label is the
     direction of the gaze.
@@ -11,7 +11,7 @@
 
 4.  Use the feature importance analysis in XGBoost along with SHAP to identify which features are most important for the prediction, so that we know which features the model is using to make its decisions.
 
-(Justification: Since XGBoost is a powerful and efficient machine learning model that is often used for classification and is particularly effective at handling structured data, providing excellent accuracy and interpretability.)
+(Justification for why XGBoost: Since XGBoost is a powerful and efficient machine learning model that is often used for classification and is particularly effective at handling structured data, providing excellent accuracy and interpretability.)
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Output:
 
-- 1 out of the 9 Eye-gazing directions (Up, down, left, right, etc)
+- 1 out of the 9 Eye-gazing directions (Up, down, left, right, up-left, up-right etc)
 
 (**Justification**: Predefining 9 eye gazing directions allows the classification problem to be simplified and reduces the number of classes that the model has to distinguish between. This makes it easier to train the model and achieve a high accuracy. Additionally, it may be more interpretable to humans to see the prediction as one of 9 distinct classes rather than as a set of coordinates. However, using a continuous set of coordinates could be useful if the problem requires more precision or if the classification categories are not clearly defined)
 
